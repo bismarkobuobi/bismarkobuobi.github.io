@@ -161,41 +161,20 @@ header {
     align-items: center;
 }
 
-/* Navigation icons - Hidden on large screens */
-.nav-icon {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
-    transition: all 0.3s ease;
-    display: none; /* Hidden by default on large screens */
-}
-
-#navbar a:hover .nav-icon {
-    opacity: 1;
-    filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--primary-color));
-    transform: scale(1.1);
-}
-
-/* Theme toggle */
-.theme-toggle {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
-    transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-    opacity: 1;
-    filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--primary-color));
-    transform: rotate(180deg) scale(1.1);
-}
-
-/* Text links - Visible on large screens, hidden on small screens */
+/* Text links - Visible on large screens ONLY */
 .hide {
     display: inline-block; /* Show text links on large screens */
+}
+
+/* Navigation icons (Font Awesome) */
+.nav-icon {
+    font-size: 20px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.icon-link i {
+    display: none; /* Hidden on large screens, will be overridden on mobile */
 }
 
 .hide::before {
@@ -297,7 +276,7 @@ header {
 
 .terminal-output {
     color: var(--text-color);
-    margin: 0.5rem 0 0.5rem 2rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
     opacity: 0;
 }
 
@@ -321,15 +300,48 @@ header {
 
 @keyframes typewriter {
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 47%; }
 }
 
-.typewriter {
+@keyframes typewriter1 {
+    from { width: 0; }
+    to { width: 20%; }
+}
+
+/* First command typewriter - starts immediately */
+.typewriter-1 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typewriter 1.5s steps(20) 0.5s forwards;
+    border-right: 2px solid var(--primary-color);
+    animation: 
+        typewriter1 1s steps(10) 0.5s forwards,
+        blink-cursor 0.75s step-end 0.5s 1.3;
     width: 0;
+}
+
+/* Second command typewriter - starts after first command output (at 3s) */
+.typewriter-2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--primary-color);
+    animation: 
+        typewriter 1.5s steps(15) 3s forwards,
+        blink-cursor 0.75s step-end 3s 2;
+    width: 0;
+}
+
+/* Cursor blinking animation for typewriter */
+@keyframes blink-cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--primary-color); }
+}
+
+/* Remove border after typing completes */
+.typewriter-1::after,
+.typewriter-2::after {
+    animation: remove-cursor 0s 2.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -786,27 +798,28 @@ section {
     /* Switch to icons on tablets and below */
     .hide {
         display: none !important; /* Hide text links */
-        color: var(--text-color)
     }
 
-    .nav-icon {
-        display: inline-block; /* Show icons */
+    .icon-link i {
+        display: inline-flex !important; /* Show icon links */
+        align-items: center;
+        justify-content: center;
     }
 
     #navbar {
-        width: auto;
         width: 60%;
-        padding: 8px 20px;
+        max-width: 60%;
+        padding: 10px 20px;
     }
 
     #navbar ul {
         gap: 1.5rem;
+        justify-content: space-around;
     }
 
     .nav-icon,
     .theme-toggle {
-        width: 22px;
-        height: 22px;
+        font-size: 20px;
     }
 
     .about-content {
@@ -838,18 +851,19 @@ section {
 @media (max-width: 480px) {
     /* Smaller icons on mobile */
     #navbar {
+        width: 70%;
+        max-width: 70%;
         padding: 8px 15px;
         top: 10px;
     }
 
     #navbar ul {
-        gap: 1rem;
+        gap: 0.8rem;
     }
 
     .nav-icon,
     .theme-toggle {
-        width: 20px;
-        height: 20px;
+        font-size: 18px;
     }
 
     .stats-box {
