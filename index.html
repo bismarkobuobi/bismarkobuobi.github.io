@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bismark Obuobi - Backend Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for lightweight icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Vintage scanline overlay -->
@@ -17,15 +19,30 @@
     <header>
             <nav id="navbar">
                 <ul>
-                    <li><a class="hide" href="#home" id="home-link">Home</a><a href="#home" id="home-link"><img class="nav-icon" src="icons/home.png" alt=""></a></li>
+                    <li>
+                        <a class="hide" href="#home">Home</a>
+                        <a href="#home" class="icon-link"><i class="fas fa-home nav-icon"></i></a>
+                    </li>
 
-                    <li><a class="hide" href="#skills" id="skills-link">Skills</a><a href="#skills" id="skills-link"><img class="nav-icon" src="icons/skills.png" alt=""></a></li>
+                    <li>
+                        <a class="hide" href="#skills">Skills</a>
+                        <a href="#skills" class="icon-link"><i class="fas fa-code nav-icon"></i></a>
+                    </li>
 
-                    <li><a class="hide" href="#projects" id="project-link">Projects</a><a href="#projects" id="project-link"><img class="nav-icon" src="icons/project.png" alt=""></a></li>
+                    <li>
+                        <a class="hide" href="#projects">Projects</a>
+                        <a href="#projects" class="icon-link"><i class="fas fa-folder-open nav-icon"></i></a>
+                    </li>
 
-                    <li><a class="hide" href="#about" id="about-link">About</a><a href="#about" id="about-link"><img class="nav-icon" src="icons/about.png" alt=""></a></li>
+                    <li>
+                        <a class="hide" href="#about">About</a>
+                        <a href="#about" class="icon-link"><i class="fas fa-user nav-icon"></i></a>
+                    </li>
 
-                    <li><a class="hide" href="#contact" id="contact-link">Contact</a><a href="#contact" id="contact-link"><img class="nav-icon" src="icons/contact-mail.png" alt=""></a></li>
+                    <li>
+                        <a class="hide" href="#contact">Contact</a>
+                        <a href="#contact" class="icon-link"><i class="fas fa-envelope nav-icon"></i></a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -43,25 +60,27 @@
                 <div class="terminal-body">
                     <p class="terminal-line">
                         <span class="prompt">visitor@portfolio:~$</span> 
-                        <span class="command typewriter">whoAmI</span>
+                        <span class="command typewriter-1">whoAmI</span>
                     </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 2s;">
+                    <p class="terminal-output fade-in" style="animation-delay: 1.7s;">
                         > Bismark Obuobi
                     </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 2.5s;">
+                    <p class="terminal-output fade-in" style="animation-delay: 2s;">
                         > Backend Developer | System Design Enthusiast
                     </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 3s;">
+                    <p class="terminal-output fade-in" style="animation-delay: 2.3s;">
                         > BSc IT Student @ University of Ghana, Legon
                     </p>
-                    <p class="terminal-line fade-in" style="animation-delay: 3.5s;">
+                    
+                    <p class="terminal-line fade-in" style="animation-delay: 3s;">
                         <span class="prompt">visitor@portfolio:~$</span> 
-                        <span class="command">cat mission.txt</span>
+                        <span class="command typewriter-2">cat mission.txt</span>
                     </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 4s;">
+                    <p class="terminal-output fade-in" style="animation-delay: 5s;">
                         > Building scalable backend systems, one API at a time...
                     </p>
-                    <p class="terminal-line fade-in" style="animation-delay: 4.5s;">
+                    
+                    <p class="terminal-line fade-in" style="animation-delay: 5.5s;">
                         <span class="prompt">visitor@portfolio:~$</span> 
                         <span class="cursor blink">_</span>
                     </p>
@@ -319,40 +338,35 @@
                             <p class="terminal-line">
                                 <span class="prompt">$</span> ./connect.sh
                             </p>
-                            <p class="terminal-output">
+                            <p class="terminal-output" style="opacity: 1;">
                                 > Initializing connection protocols...
                             </p>
-                            <p class="terminal-output">
+                            <p class="terminal-output" style="opacity: 1;">
                                 > Ready to collaborate!
                             </p>
                             <br>
                             <div class="contact-links">
-                                <!-- TODO: Add your actual email address -->
-                                <a href="mailto:your.email@example.com" class="contact-link">
-                                    <span class="blink">></span> EMAIL: your.email@example.com
+                                <a href="mailto:bismarkobuobi19@gmail.com" class="contact-link">
+                                    <span class="blink">></span> EMAIL: bismarkobuobi19@gmail.com
                                 </a>
-                                <!-- TODO: Add your GitHub username -->
-                                <a href="https://github.com/yourusername" target="_blank" class="contact-link">
-                                    <span class="blink">></span> GITHUB: /yourusername
+                                <a href="https://github.com/kev-69" target="_blank" class="contact-link">
+                                    <span class="blink">></span> GITHUB: /kev-69
                                 </a>
-                                <!-- TODO: Add your LinkedIn profile -->
-                                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
-                                    <span class="blink">></span> LINKEDIN: /in/yourprofile
+                                <a href="https://linkedin.com/in/bismarkobuobi" target="_blank" class="contact-link">
+                                    <span class="blink">></span> LINKEDIN: /in/bismarkobuobi
                                 </a>
-                                <!-- TODO: Add your Twitter/X handle (optional) -->
-                                <a href="https://twitter.com/yourhandle" target="_blank" class="contact-link">
-                                    <span class="blink">></span> TWITTER: @yourhandle
+                                <a href="https://twitter.com/statuscode_200" target="_blank" class="contact-link">
+                                    <span class="blink">></span> TWITTER: @statuscode_200
                                 </a>
-                                <!-- TODO: Add your phone number (optional) -->
-                                <a href="tel:+233xxxxxxxxx" class="contact-link">
-                                    <span class="blink">></span> PHONE: +233 XX XXX XXXX
+                                <a href="tel:+233242107509" class="contact-link">
+                                    <span class="blink">></span> PHONE: +233 24 210 7509
                                 </a>
                             </div>
                             <br>
-                            <p class="terminal-output">
+                            <p class="terminal-output" style="opacity: 1;">
                                 > Location: Accra, Ghana 🇬🇭
                             </p>
-                            <p class="terminal-output">
+                            <p class="terminal-output" style="opacity: 1;">
                                 > Status: Available for opportunities
                             </p>
                         </div>
@@ -372,7 +386,7 @@
                             or just want to connect—feel free to reach out!
                         </p>
                         <!-- TODO: Update with your actual email -->
-                        <a href="mailto:your.email@example.com" class="cta-button">
+                        <a href="mailto:bismarkobuobi19@gmail.com" class="cta-button">
                             <span class="blink">></span> SEND_MESSAGE()
                         </a>
                     </div>
