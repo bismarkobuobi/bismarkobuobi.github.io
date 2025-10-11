@@ -1,3 +1,20 @@
+// Navbar transparency on scroll
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Add 'scrolled' class when scrolling down, remove when at top
+    if (scrollTop > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
