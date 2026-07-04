@@ -3,411 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bismark Obuobi - Backend Developer</title>
+    <title>Bismark Obuobi — Backend Developer</title>
+    <meta name="description" content="Bismark Obuobi — Backend developer & system design enthusiast building scalable APIs with Node.js, Express, and SQL/NoSQL databases.">
+    <meta name="author" content="Bismark Obuobi">
+    <meta property="og:title" content="Bismark Obuobi — Backend Developer">
+    <meta property="og:description" content="Backend developer & system design enthusiast building scalable APIs.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for lightweight icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Vintage scanline overlay -->
     <div class="scanlines"></div>
-    
-    <!-- CRT screen effect -->
     <div class="crt"></div>
 
-    <!-- Header with typewriter effect -->
     <header>
-            <nav id="navbar">
-                <ul>
-                    <li>
-                        <a class="hide" href="#home">Home</a>
-                        <a href="#home" class="icon-link"><i class="fas fa-home nav-icon"></i></a>
-                    </li>
+        <nav id="navbar" aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span class="nav-label">Home</span></a></li>
+                <li><a href="about.html"><i class="fas fa-user nav-icon" aria-hidden="true"></i><span class="nav-label">About</span></a></li>
+                <li><a href="skills.html"><i class="fas fa-code nav-icon" aria-hidden="true"></i><span class="nav-label">Skills</span></a></li>
+                <li><a href="projects.html"><i class="fas fa-folder-open nav-icon" aria-hidden="true"></i><span class="nav-label">Projects</span></a></li>
+                <li><a href="blog.html"><i class="fas fa-pen-nib nav-icon" aria-hidden="true"></i><span class="nav-label">Blog</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope nav-icon" aria-hidden="true"></i><span class="nav-label">Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <li>
-                        <a class="hide" href="#skills">Skills</a>
-                        <a href="#skills" class="icon-link"><i class="fas fa-code nav-icon"></i></a>
-                    </li>
-
-                    <li>
-                        <a class="hide" href="#projects">Projects</a>
-                        <a href="#projects" class="icon-link"><i class="fas fa-folder-open nav-icon"></i></a>
-                    </li>
-
-                    <li>
-                        <a class="hide" href="#about">About</a>
-                        <a href="#about" class="icon-link"><i class="fas fa-user nav-icon"></i></a>
-                    </li>
-
-                    <li>
-                        <a class="hide" href="#contact">Contact</a>
-                        <a href="#contact" class="icon-link"><i class="fas fa-envelope nav-icon"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <span class="terminal-button red"></span>
-                    <span class="terminal-button yellow"></span>
-                    <span class="terminal-button green"></span>
-                    <span class="terminal-title">terminal@bismark:~</span>
-                </div>
-                <div class="terminal-body">
-                    <p class="terminal-line">
-                        <span class="prompt">visitor@portfolio:~$</span> 
-                        <span class="command typewriter-1">whoAmI</span>
-                    </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 1.7s;">
-                        > Bismark Obuobi
-                    </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 2s;">
-                        > Backend Developer | System Design Enthusiast
-                    </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 2.3s;">
-                        > BSc IT Student @ University of Ghana, Legon
-                    </p>
-                    
-                    <p class="terminal-line fade-in" style="animation-delay: 3s;">
-                        <span class="prompt">visitor@portfolio:~$</span> 
-                        <span class="command typewriter-2">cat mission.txt</span>
-                    </p>
-                    <p class="terminal-output fade-in" style="animation-delay: 5s;">
-                        > Building scalable backend systems, one API at a time...
-                    </p>
-                    
-                    <p class="terminal-line fade-in" style="animation-delay: 5.5s;">
-                        <span class="prompt">visitor@portfolio:~$</span> 
-                        <span class="cursor blink">_</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title glitch" data-text="ABOUT_ME.exe">ABOUT_ME.exe</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <!-- TODO: Replace with your actual photo path -->
-                    <!-- Example: <img src="images/profile.jpg" alt="Bismark Obuobi"> -->
-                    <div class="placeholder-image">
-                        <p>[ YOUR PHOTO HERE ]</p>
-                        <p class="small-text">Replace in HTML line ~90</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                        <span class="terminal-title">terminal@bismark:~</span>
                     </div>
-                </div>
-                <div class="about-text">
-                    <div class="retro-card">
-                        <p class="typing-effect">
-                            Hello! I'm <span class="highlight">Bismark Obuobi</span>, a final year BSc IT student 
-                            at the University of Ghana, Legon with a burning passion for backend development 
-                            and system design.
+                    <div class="terminal-body">
+                        <p class="terminal-line">
+                            <span class="prompt">visitor@portfolio:~$</span>
+                            <span class="command typewriter-1">whoAmI</span>
                         </p>
-                        <p>
-                            While I have experience in frontend development with <span class="highlight">ReactJS</span> 
-                            and <span class="highlight">React Native</span>, my true calling lies in architecting 
-                            robust backend systems. I specialize in building scalable APIs with 
-                            <span class="highlight">Node.js & Express</span>, working with both SQL and NoSQL databases.
+                        <p class="terminal-output fade-in" style="animation-delay: 1.7s;">&gt; Bismark Obuobi</p>
+                        <p class="terminal-output fade-in" style="animation-delay: 2s;">&gt; Backend Developer | System Design Enthusiast</p>
+                        <p class="terminal-output fade-in" style="animation-delay: 2.3s;">&gt; BSc IT Student @ University of Ghana, Legon</p>
+
+                        <p class="terminal-line fade-in" style="animation-delay: 3s;">
+                            <span class="prompt">visitor@portfolio:~$</span>
+                            <span class="command typewriter-2">cat mission.txt</span>
                         </p>
-                        <p>
-                            My journey from frontend to backend reflects my desire to understand the complete 
-                            picture of software architecture. I'm constantly learning, building, and pushing 
-                            myself towards becoming a <span class="highlight">world-class software engineer</span>.
+                        <p class="terminal-output fade-in" style="animation-delay: 5s;">&gt; Building scalable backend systems, one API at a time...</p>
+
+                        <p class="terminal-line fade-in" style="animation-delay: 5.5s;">
+                            <span class="prompt">visitor@portfolio:~$</span>
+                            <span class="cursor"></span>
                         </p>
-                        <div class="stats-box">
-                            <div class="stat-item">
-                                <span class="stat-number">2+</span>
-                                <span class="stat-label">Years Coding</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">10+</span>
-                                <span class="stat-label">Projects Built</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">∞</span>
-                                <span class="stat-label">Lines of Code</span>
-                            </div>
+
+                        <div class="hero-cta fade-in" style="animation-delay: 5.8s;">
+                            <a href="projects.html" class="cta-button"><span class="blink">&gt;</span> VIEW_PROJECTS()</a>
+                            <a href="blog.html" class="cta-button"><span class="blink">&gt;</span> READ_BLOG()</a>
+                            <a href="contact.html" class="cta-button"><span class="blink">&gt;</span> GET_IN_TOUCH()</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title glitch" data-text="TECH_STACK.json">TECH_STACK.json</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <span class="blink">&gt;</span> Backend Development
-                    </h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <div class="skill-name">Node.js & Express</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">RESTful APIs</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">System Design</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%" data-progress="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <span class="blink">&gt;</span> Databases
-                    </h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <div class="skill-name">PostgreSQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">MySQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">MongoDB</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 78%" data-progress="78"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <span class="blink">&gt;</span> Languages
-                    </h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">TypeScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 60%" data-progress="60"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Java</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 55%" data-progress="55"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <span class="blink">&gt;</span> Frontend (Side Skills)
-                    </h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <div class="skill-name">React.js</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">React Native</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%" data-progress="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title glitch" data-text="PROJECTS.db">PROJECTS.db</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">📦</span>
-                        <h3>Multitenant E-Commerce Platform</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Built a secure, scalable backend for a multitenant e-commerce web application 
-                            where users can browse and purchase products from multiple vendors across the platform.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Multi-tenancy</span>
-                            <span class="tech-tag">RESTful API</span>
-                        </div>
-                        <div class="project-features">
-                            <p><span class="blink">></span> Multi-vendor support</p>
-                            <p><span class="blink">></span> Secure authentication & authorization</p>
-                            <p><span class="blink">></span> Product browsing & purchase system</p>
-                            <p><span class="blink">></span> Scalable architecture</p>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge">HOSTED</span>
-                            <span class="status-text">farmgh.com (not in full operation)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">💪</span>
-                        <h3>UG Gym Subscription System</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Developed the backend for University of Ghana Gym's subscription management system, 
-                            digitalizing the manual process and allowing users to purchase and manage subscriptions 
-                            online anytime, anywhere.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Payment Integration</span>
-                            <span class="tech-tag">Subscription Management</span>
-                        </div>
-                        <div class="project-features">
-                            <p><span class="blink">></span> Online subscription purchase</p>
-                            <p><span class="blink">></span> Subscription management system</p>
-                            <p><span class="blink">></span> User authentication</p>
-                            <p><span class="blink">></span> Eliminates manual processing</p>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge pending">PENDING DEPLOYMENT</span>
-                            <span class="status-text">Client yet to host</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title glitch" data-text="CONTACT.md">CONTACT.md</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="terminal-window">
-                        <div class="terminal-header">
-                            <span class="terminal-button red"></span>
-                            <span class="terminal-button yellow"></span>
-                            <span class="terminal-button green"></span>
-                            <span class="terminal-title">get_in_touch.sh</span>
-                        </div>
-                        <div class="terminal-body">
-                            <p class="terminal-line">
-                                <span class="prompt">$</span> ./connect.sh
-                            </p>
-                            <p class="terminal-output" style="opacity: 1;">
-                                > Initializing connection protocols...
-                            </p>
-                            <p class="terminal-output" style="opacity: 1;">
-                                > Ready to collaborate!
-                            </p>
-                            <br>
-                            <div class="contact-links">
-                                <a href="mailto:bismarkobuobi19@gmail.com" class="contact-link">
-                                    <span class="blink">></span> EMAIL: bismarkobuobi19@gmail.com
-                                </a>
-                                <a href="https://github.com/kev-69" target="_blank" class="contact-link">
-                                    <span class="blink">></span> GITHUB: /kev-69
-                                </a>
-                                <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BrVovWJF6T5GZ6JTaqRgF%2FQ%3D%3D" target="_blank" class="contact-link">
-                                    <span class="blink">></span> LINKEDIN: /in/bismarkobuobi
-                                </a>
-                                <a href="https://twitter.com/statuscode_200" target="_blank" class="contact-link">
-                                    <span class="blink">></span> TWITTER: @statuscode_200
-                                </a>
-                                <a href="tel:+233242107509" class="contact-link">
-                                    <span class="blink">></span> PHONE: +233 24 210 7509
-                                </a>
-                            </div>
-                            <br>
-                            <p class="terminal-output" style="opacity: 1;">
-                                > Location: Accra, Ghana 🇬🇭
-                            </p>
-                            <p class="terminal-output" style="opacity: 1;">
-                                > Status: Available for opportunities
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-cta">
-                    <div class="retro-card">
-                        <h3>Let's Build Something Amazing</h3>
-                        <p>
-                            I'm always interested in hearing about new projects and opportunities, 
-                            especially those involving backend development, system design, or anything 
-                            that challenges me to grow as an engineer.
-                        </p>
-                        <p>
-                            Whether you need a backend API, want to discuss system architecture, 
-                            or just want to connect—feel free to reach out!
-                        </p>
-                        <!-- TODO: Update with your actual email -->
-                        <a href="mailto:bismarkobuobi19@gmail.com" class="cta-button">
-                            <span class="blink">></span> SEND_MESSAGE()
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-text">
-                    <span class="blink">></span> Designed & Built by Bismark Obuobi
-                </p>
-                <p class="footer-text">
-                    &copy; 2025 | Powered by passion and caffeine ☕
-                </p>
-                <p class="footer-ascii">
-                    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/kev-69" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bismark-obuobi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/statuscode_200" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="mailto:bismarkobuobi19@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text"><span class="blink">&gt;</span> Designed &amp; Built by Bismark Obuobi</p>
+                <p class="footer-text">&copy; <span data-year>2025</span> | Powered by passion and caffeine &#9749;</p>
             </div>
         </div>
     </footer>
