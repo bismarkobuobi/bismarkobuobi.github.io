@@ -1,0 +1,16 @@
+[
+    {
+        "slug": "hello-world",
+        "title": "Hello, World: Why I Started Writing",
+        "date": "2026-07-04",
+        "excerpt": "A first post on why a backend developer decided to start blogging, and what you can expect to find here.",
+        "tags": ["Meta", "Career"]
+    },
+    {
+        "slug": "designing-multitenant-backends",
+        "title": "Designing a Multitenant Backend Without Losing Your Mind",
+        "date": "2026-06-20",
+        "excerpt": "Lessons from building a multitenant e-commerce platform: data isolation, tenant routing, and the trade-offs I wish I'd known earlier.",
+        "tags": ["Backend", "System Design", "PostgreSQL"]
+    }
+]
