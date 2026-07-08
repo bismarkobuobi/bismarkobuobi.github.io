@@ -1,5 +1,12 @@
 [
     {
+        "slug": "building-a-gym-on-the-internet",
+        "title": "Building a Gym That Lives on the Internet",
+        "date": "2026-07-08",
+        "excerpt": "The story of building the University of Ghana Gymnasium platform — three apps, online payments, and keeping a system alive under real users. Written for coders and non-coders alike.",
+        "tags": ["Backend", "System Design", "Project", "React"]
+    },
+    {
         "slug": "hello-world",
         "title": "Hello, World: Why I Started Writing",
         "date": "2026-07-04",
