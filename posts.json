@@ -1,5 +1,12 @@
 [
     {
+        "slug": "building-a-pharmacy-on-the-internet",
+        "title": "Building a Pharmacy That Lives on the Internet",
+        "date": "2026-08-28",
+        "excerpt": "Building an online pharmacy for a real client in Okaishie — why there's no stock column, the SMS bug that tripled a phone bill, and what changes when your bugs cost somebody else money.",
+        "tags": ["Backend", "System Design", "Project", "PostgreSQL"]
+    },
+    {
         "slug": "building-a-gym-on-the-internet",
         "title": "Building a Gym That Lives on the Internet",
         "date": "2026-07-08",
