@@ -107,8 +107,9 @@
                 <p class="eyebrow" data-reveal><span class="pixel-tick"></span>Projects</p>
                 <h1 class="display display-l" data-reveal style="--i:1">Systems with<br><em>real users</em></h1>
                 <p class="lede lede--wide" data-reveal style="--i:2">
-                    Two backends that had to hold up outside a tutorial: one for many
-                    vendors at once, one for money changing hands on a schedule.
+                    Three systems that had to hold up outside a tutorial: one selling
+                    medicine to real customers, one holding many vendors at once, one
+                    taking money on a schedule.
                 </p>
                 <div class="rule" data-reveal style="--i:3"></div>
             </div>
@@ -123,6 +124,88 @@
                 <article class="work-item" data-reveal>
                     <div class="work-head">
                         <span class="work-index" aria-hidden="true">01</span>
+                        <h2 class="work-title">Shaggysco Pharmacy</h2>
+                        <p class="work-meta">Full stack &nbsp;·&nbsp; React, Express, Prisma, PostgreSQL</p>
+
+                        <div class="work-plate">
+                            <svg viewBox="0 0 260 160" role="img" aria-label="Sketch: two in-date stock batches add up to a derived stock figure, while an expired batch drops out of the sum on its own.">
+                                <rect class="dg-box" x="12" y="12" width="70" height="32"/>
+                                <text class="dg-label" x="47" y="32" text-anchor="middle">BN-4471</text>
+
+                                <rect class="dg-box" x="12" y="58" width="70" height="32"/>
+                                <text class="dg-label" x="47" y="78" text-anchor="middle">BN-5108</text>
+
+                                <rect class="dg-dashed" x="12" y="104" width="70" height="32"/>
+                                <text class="dg-label" x="47" y="120" text-anchor="middle" opacity="0.45">BN-3902</text>
+                                <text class="dg-sub" x="47" y="131" text-anchor="middle">EXPIRED</text>
+
+                                <!-- In-date batches sum -->
+                                <path class="dg-wire" d="M82 28c20 0 10 46 28 46M82 74h28"/>
+
+                                <!-- The expired batch stops counting on its own -->
+                                <path class="dg-dashed" d="M82 120c12 0 14-11 19-19"/>
+                                <path class="dg-wire" d="M96 96l10 10M106 96l-10 10" opacity="0.5"/>
+
+                                <rect class="dg-pixel" x="107" y="71" width="6" height="6"/>
+
+                                <path class="dg-wire-accent" d="M113 74h29"/>
+                                <path class="dg-arrow-accent" d="M150 74l-10-5.5v11z"/>
+
+                                <rect class="dg-box-fill" x="150" y="56" width="84" height="36"/>
+                                <text class="dg-label" x="192" y="72" text-anchor="middle">STOCK</text>
+                                <text class="dg-sub" x="192" y="84" text-anchor="middle">DERIVED</text>
+
+                                <rect class="dg-pixel" x="9" y="9" width="5" height="5"/>
+                                <rect class="dg-pixel" x="9" y="55" width="5" height="5"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="work-body">
+                        <p class="work-desc">
+                            An online storefront and a staff dashboard for an
+                            over-the-counter chemist on the first floor of Naa Plaza
+                            Building, Okaishie &mdash; a real client, with real shelves and
+                            an owner who notices immediately if the delivery fee is wrong.
+                            Three applications on one server, sharing a typed domain package
+                            so the two frontends can never disagree about what an order
+                            status means.
+                        </p>
+                        <p class="work-desc">
+                            There is no stock column. Stock is derived from the batches that
+                            actually arrived, each with its code and expiry, so a recall can
+                            be answered by batch number and expired boxes stop counting at
+                            midnight without anybody remembering to do anything.
+                        </p>
+
+                        <div class="tag-row">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Paystack</span>
+                            <span class="tag">SMS</span>
+                        </div>
+
+                        <ul class="work-features">
+                            <li>Catalogue, basket and checkout &mdash; card, mobile money, cash on delivery</li>
+                            <li>Batch and expiry tracking in place of a stored stock count</li>
+                            <li>SMS on dispatch, order alerts to the shop</li>
+                            <li>Caddy with automatic TLS, systemd, database bound to localhost</li>
+                        </ul>
+
+                        <div class="work-foot">
+                            <span class="chip">Live</span>
+                            <a class="arrow-link" href="https://shaggyscopharmacy.com" target="_blank" rel="noopener noreferrer">shaggyscopharmacy.com<svg viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h13.5M9.5 1 13.8 5 9.5 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================================== 02 -->
+                <article class="work-item" data-reveal>
+                    <div class="work-head">
+                        <span class="work-index" aria-hidden="true">02</span>
                         <h2 class="work-title">Multitenant E-Commerce Platform</h2>
                         <p class="work-meta">Backend &nbsp;·&nbsp; Node.js, Express, PostgreSQL</p>
 
@@ -189,10 +272,10 @@
                     </div>
                 </article>
 
-                <!-- ================================================== 02 -->
+                <!-- ================================================== 03 -->
                 <article class="work-item" data-reveal>
                     <div class="work-head">
-                        <span class="work-index" aria-hidden="true">02</span>
+                        <span class="work-index" aria-hidden="true">03</span>
                         <h2 class="work-title">UG Gym Subscription System</h2>
                         <p class="work-meta">Backend &nbsp;·&nbsp; Node.js, Express, MongoDB</p>
 
@@ -265,8 +348,11 @@
                     <path d="M1 22l4 6 7-3"/>
                 </svg>
                 <p class="annotation">
-                    there's a longer write-up of the gym build over in
-                    <a class="link" href="post.html?slug=building-a-gym-on-the-internet">Writing</a>
+                    longer write-ups of the
+                    <a class="link" href="post.html?slug=building-a-pharmacy-on-the-internet">pharmacy</a>
+                    and the
+                    <a class="link" href="post.html?slug=building-a-gym-on-the-internet">gym</a>
+                    builds live over in Writing
                 </p>
             </div>
 
