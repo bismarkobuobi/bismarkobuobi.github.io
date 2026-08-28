@@ -1,93 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="paper">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bismark Obuobi — Backend Developer</title>
-    <meta name="description" content="Bismark Obuobi — Backend developer & system design enthusiast building scalable APIs with Node.js, Express, and SQL/NoSQL databases.">
-    <meta name="author" content="Bismark Obuobi">
-    <meta property="og:title" content="Bismark Obuobi — Backend Developer">
-    <meta property="og:description" content="Backend developer & system design enthusiast building scalable APIs.">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="icons/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bismark Obuobi — Backend Developer</title>
+<meta name="description" content="Bismark Obuobi is a backend developer in Accra, Ghana, building scalable APIs and systems with Node.js, Express, PostgreSQL and MongoDB.">
+<meta name="author" content="Bismark Obuobi">
+<meta name="theme-color" content="#f4f1e9">
+<link rel="canonical" href="https://www.bismarkobuobi.live/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bismarkobuobi.live/">
+<meta property="og:title" content="Bismark Obuobi — Backend Developer">
+<meta property="og:description" content="Backend developer and system design enthusiast, building scalable APIs from Accra, Ghana.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Permanent+Marker&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+    (function () {
+        var root = document.documentElement;
+        root.classList.add('js');
+        try {
+            var stored = localStorage.getItem('theme');
+            if (stored === 'ink' || stored === 'paper') root.setAttribute('data-theme', stored);
+        } catch (e) {}
+    })();
+</script>
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="crt"></div>
 
-    <header>
-        <nav id="navbar" aria-label="Primary">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span class="nav-label">Home</span></a></li>
-                <li><a href="about.html"><i class="fas fa-user nav-icon" aria-hidden="true"></i><span class="nav-label">About</span></a></li>
-                <li><a href="skills.html"><i class="fas fa-code nav-icon" aria-hidden="true"></i><span class="nav-label">Skills</span></a></li>
-                <li><a href="projects.html"><i class="fas fa-folder-open nav-icon" aria-hidden="true"></i><span class="nav-label">Projects</span></a></li>
-                <li><a href="blog.html"><i class="fas fa-pen-nib nav-icon" aria-hidden="true"></i><span class="nav-label">Blog</span></a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope nav-icon" aria-hidden="true"></i><span class="nav-label">Contact</span></a></li>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="wordmark" href="index.html">
+            <svg class="wordmark-glyph" viewBox="0 0 16 16" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true">
+                <rect x="2" y="2" width="3" height="12"/>
+                <rect x="5" y="2" width="6" height="2"/>
+                <rect x="9" y="4" width="2" height="3"/>
+                <rect x="5" y="7" width="6" height="2"/>
+                <rect x="11" y="9" width="2" height="3"/>
+                <rect x="5" y="12" width="8" height="2"/>
+            </svg>
+            <span class="wordmark-text">Bismark Obuobi</span>
+        </a>
+
+        <nav data-nav aria-label="Primary">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="skills.html">Skills</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="blog.html">Writing</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <span class="terminal-button red"></span>
-                        <span class="terminal-button yellow"></span>
-                        <span class="terminal-button green"></span>
-                        <span class="terminal-title">terminal@bismark:~</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p class="terminal-line">
-                            <span class="prompt">visitor@portfolio:~$</span>
-                            <span class="command typewriter-1">whoAmI</span>
-                        </p>
-                        <p class="terminal-output fade-in" style="animation-delay: 1.7s;">&gt; Bismark Obuobi</p>
-                        <p class="terminal-output fade-in" style="animation-delay: 2s;">&gt; Backend Developer | System Design Enthusiast</p>
-                        <p class="terminal-output fade-in" style="animation-delay: 2.3s;">&gt; BSc IT Student @ University of Ghana, Legon</p>
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to ink theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4.2"/>
+                    <path d="M12 1.9v2.5M12 19.6v2.5M22.1 12h-2.5M4.4 12H1.9M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8M19.1 19.1l-1.8-1.8M6.7 6.7 4.9 4.9"/>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20.5 14.6A8.8 8.8 0 0 1 9.4 3.5a8.8 8.8 0 1 0 11.1 11.1Z"/>
+                </svg>
+            </button>
 
-                        <p class="terminal-line fade-in" style="animation-delay: 3s;">
-                            <span class="prompt">visitor@portfolio:~$</span>
-                            <span class="command typewriter-2">cat mission.txt</span>
-                        </p>
-                        <p class="terminal-output fade-in" style="animation-delay: 5s;">&gt; Building scalable backend systems, one API at a time...</p>
+            <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+                <span class="visually-hidden">Menu</span>
+                <span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+    </div>
+</header>
 
-                        <p class="terminal-line fade-in" style="animation-delay: 5.5s;">
-                            <span class="prompt">visitor@portfolio:~$</span>
-                            <span class="cursor"></span>
-                        </p>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-nav>
+    <ul class="mobile-menu-list">
+        <li><a class="mobile-menu-link" href="index.html" style="--i:0"><span class="idx">00</span>Home</a></li>
+        <li><a class="mobile-menu-link" href="about.html" style="--i:1"><span class="idx">01</span>About</a></li>
+        <li><a class="mobile-menu-link" href="skills.html" style="--i:2"><span class="idx">02</span>Skills</a></li>
+        <li><a class="mobile-menu-link" href="projects.html" style="--i:3"><span class="idx">03</span>Projects</a></li>
+        <li><a class="mobile-menu-link" href="blog.html" style="--i:4"><span class="idx">04</span>Writing</a></li>
+        <li><a class="mobile-menu-link" href="contact.html" style="--i:5"><span class="idx">05</span>Contact</a></li>
+    </ul>
+    <div class="mobile-menu-foot">
+        <p class="micro">Accra, Ghana</p>
+        <div class="socials">
+            <a class="social" href="https://github.com/kev-69" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg></a>
+            <a class="social" href="https://www.linkedin.com/in/bismark-obuobi-5a473730a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+            <a class="social" href="https://twitter.com/statuscode_200" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.3 19.5h2.04L6.49 3.24H4.3l13.3 17.41Z"/></svg></a>
+            <a class="social" href="mailto:bismarkobuobi19@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.75" width="19" height="14.5"/><path d="m2.9 5.6 9.1 6.9 9.1-6.9"/></svg></a>
+        </div>
+    </div>
+</div>
 
-                        <div class="hero-cta fade-in" style="animation-delay: 5.8s;">
-                            <a href="projects.html" class="cta-button"><span class="blink">&gt;</span> VIEW_PROJECTS()</a>
-                            <a href="blog.html" class="cta-button"><span class="blink">&gt;</span> READ_BLOGS()</a>
-                            <!-- download resume -->
-                            <a href="docs/bismarkobuobi_resume.pdf" target="_blank" class="cta-button"><span class="blink">&gt;</span> DOWNLOAD_RESUME()</a>
-                            <a href="contact.html" class="cta-button"><span class="blink">&gt;</span> GET_IN_TOUCH()</a>
-                        </div>
-                    </div>
+<main id="main">
+
+    <!-- ============================================================ HERO -->
+    <section class="hero">
+        <div class="hero-grid grid-paper" aria-hidden="true"></div>
+        <div class="container hero-inner">
+
+            <div class="hero-top">
+                <p class="eyebrow" data-enter style="--i:0">
+                    <span class="pixel-tick"></span>Backend developer &nbsp;/&nbsp; System design
+                </p>
+                <div class="pixel-ramp" data-enter style="--i:1" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-socials">
-                    <a href="https://github.com/kev-69" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/bismark-obuobi-5a473730a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/statuscode_200" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="mailto:bismarkobuobi19@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <h1 class="hero-name">
+                <span class="display display-xl" data-enter style="--i:1">Bismark</span>
+                <span class="display display-xl line-2" data-enter style="--i:2">Obuobi<svg class="sweep" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true">
+                    <path pathLength="1" d="M8 27C90 20 168 31 254 25s160 7 216 0c26-3 82 2 114 5"/>
+                </svg></span>
+            </h1>
+
+            <div class="hero-body">
+                <div class="hero-lede-wrap">
+                    <p class="lede lede--wide" data-enter style="--i:4">
+                        I build the load-bearing half of software — the APIs, schemas and
+                        services that have to stay standing when nobody is watching them.
+                    </p>
+
+                    <div class="hero-note" data-enter style="--i:5">
+                        <svg viewBox="0 0 48 36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--blueprint)">
+                            <path d="M46 3C34 2 20 6 12 16c-3 4-5 9-5 15"/>
+                            <path d="M2 24l5 8 8-4"/>
+                        </svg>
+                        <p class="annotation">mostly Node &amp; Postgres, occasionally Mongo when the shape fits</p>
+                    </div>
+
+                    <div class="hero-actions" data-enter style="--i:6">
+                        <a class="btn" href="projects.html">View projects</a>
+                        <a class="btn btn--ghost" href="docs/bismarkobuobi_resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+                        <a class="btn btn--spray" href="contact.html">Get in touch</a>
+                    </div>
                 </div>
-                <p class="footer-text"><span class="blink">&gt;</span> Designed &amp; Built by Bismark Obuobi</p>
-                <p class="footer-text">&copy; <span data-year>2025</span> | Powered by passion and caffeine &#9749;</p>
+
+                <div class="hero-aside" data-enter style="--i:7">
+                    <dl class="hero-facts">
+                        <div><dt>Role</dt><dd>Backend developer</dd></div>
+                        <div><dt>Based</dt><dd>Accra, Ghana</dd></div>
+                        <div><dt>Studying</dt><dd>BSc IT, Univ. of Ghana</dd></div>
+                        <div><dt>Status</dt><dd><span class="chip">Open to work</span></dd></div>
+                    </dl>
+                    <p class="micro">Building scalable backend systems, one API at a time</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================= MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Node.js</span><i></i>
+            <span>Express</span><i></i>
+            <span>PostgreSQL</span><i></i>
+            <span>MongoDB</span><i></i>
+            <span>MySQL</span><i></i>
+            <span>TypeScript</span><i></i>
+            <span>REST</span><i></i>
+            <span>Multi-tenancy</span><i></i>
+            <span>System design</span><i></i>
+            <span>React</span><i></i>
+            <span>React Native</span><i></i>
+        </div>
+    </div>
+
+    <!-- ======================================================= WHAT I DO -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="tag-numeral" aria-hidden="true">01</span>
+                <p class="eyebrow"><span class="pixel-tick"></span>What I do</p>
+                <h2 class="display display-m">Three things, done<em> properly</em></h2>
+                <div class="rule"></div>
+            </div>
+
+            <div class="tri-grid" data-reveal-group>
+                <article class="panel" data-reveal>
+                    <p class="panel-num">01 / Interfaces</p>
+                    <h3 class="panel-title">APIs that read like documentation</h3>
+                    <p>
+                        Predictable resources, honest status codes, errors a client can
+                        actually branch on. The contract is the product.
+                    </p>
+                </article>
+
+                <article class="panel" data-reveal>
+                    <p class="panel-num">02 / Data</p>
+                    <h3 class="panel-title">Schemas that survive the second year</h3>
+                    <p>
+                        Relational where relationships matter, document where they don't.
+                        Constraints in the database, not only in the application.
+                    </p>
+                </article>
+
+                <article class="panel" data-reveal>
+                    <p class="panel-num">03 / Systems</p>
+                    <h3 class="panel-title">Architecture with the trade-offs written down</h3>
+                    <p>
+                        Multi-tenancy, auth boundaries, payment flows. The parts that are
+                        expensive to change once real users depend on them.
+                    </p>
+                </article>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- =================================================== SELECTED WORK -->
+    <section class="section section--sunken">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="tag-numeral" aria-hidden="true">02</span>
+                <p class="eyebrow"><span class="pixel-tick"></span>Selected work</p>
+                <h2 class="display display-m">Systems I<em> shipped</em></h2>
+                <div class="rule"></div>
+            </div>
+
+            <div class="work-list">
+                <article class="work-item" data-reveal>
+                    <div class="work-head">
+                        <span class="work-index" aria-hidden="true">01</span>
+                        <h3 class="work-title">Multitenant E-Commerce Platform</h3>
+                        <p class="work-meta">Backend &nbsp;·&nbsp; Node.js, PostgreSQL</p>
+                    </div>
+                    <div class="work-body">
+                        <p class="work-desc">
+                            A secure, scalable backend for a multitenant e-commerce web
+                            application where users browse and purchase products from
+                            multiple vendors across a single platform.
+                        </p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Multi-tenancy</span>
+                            <span class="tag">RESTful API</span>
+                        </div>
+                        <div class="work-foot">
+                            <span class="chip">Hosted &mdash; farmgh.com</span>
+                            <a class="arrow-link" href="projects.html">Details<svg viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h13.5M9.5 1 13.8 5 9.5 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-reveal>
+                    <div class="work-head">
+                        <span class="work-index" aria-hidden="true">02</span>
+                        <h3 class="work-title">UG Gym Subscription System</h3>
+                        <p class="work-meta">Backend &nbsp;·&nbsp; Node.js, MongoDB</p>
+                    </div>
+                    <div class="work-body">
+                        <p class="work-desc">
+                            The backend for the University of Ghana Gym's subscription
+                            management system &mdash; digitalising a manual process so members
+                            can buy and manage subscriptions online, at any hour.
+                        </p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Payments</span>
+                            <span class="tag">Subscriptions</span>
+                        </div>
+                        <div class="work-foot">
+                            <span class="chip chip--pending">Pending deployment</span>
+                            <a class="arrow-link" href="projects.html">Details<svg viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h13.5M9.5 1 13.8 5 9.5 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-foot">
+                <a class="arrow-link" href="projects.html">All projects<svg viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h13.5M9.5 1 13.8 5 9.5 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= RECENT WRITING -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="tag-numeral" aria-hidden="true">03</span>
+                <p class="eyebrow"><span class="pixel-tick"></span>Writing</p>
+                <h2 class="display display-m">Notes from the<em> build</em></h2>
+                <div class="rule"></div>
+            </div>
+
+            <div class="post-list" id="recent-posts">
+                <p class="loading-state">Loading posts…</p>
+            </div>
+
+            <div class="section-foot">
+                <a class="arrow-link" href="blog.html">All writing<svg viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h13.5M9.5 1 13.8 5 9.5 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================== CTA BAND -->
+    <section class="cta-band">
+        <div class="cta-band-hatch hatch--cross" aria-hidden="true"></div>
+        <div class="container cta-inner">
+            <p class="eyebrow" data-reveal><span class="pixel-tick"></span>Next</p>
+            <h2 class="display display-l" data-reveal style="--i:1">Got something<br><em>worth building?</em></h2>
+            <p class="lede lede--wide" data-reveal style="--i:2">
+                I'm interested in backend work, system architecture, and anything that
+                forces me to grow as an engineer.
+            </p>
+            <div class="cluster" data-reveal style="--i:3">
+                <a class="btn btn--spray" href="contact.html">Start a conversation</a>
+                <a class="btn btn--ghost" href="mailto:bismarkobuobi19@gmail.com">bismarkobuobi19@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-blurb">
+                <strong>Bismark Obuobi</strong>
+                <p class="micro">Backend developer &nbsp;·&nbsp; Accra, Ghana</p>
+                <p class="pixel-label">Available for opportunities</p>
+            </div>
+            <div class="socials">
+                <a class="social" href="https://github.com/kev-69" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg></a>
+                <a class="social" href="https://www.linkedin.com/in/bismark-obuobi-5a473730a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+                <a class="social" href="https://twitter.com/statuscode_200" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.3 19.5h2.04L6.49 3.24H4.3l13.3 17.41Z"/></svg></a>
+                <a class="social" href="mailto:bismarkobuobi19@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.75" width="19" height="14.5"/><path d="m2.9 5.6 9.1 6.9 9.1-6.9"/></svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mark" aria-hidden="true">OBUOBI</div>
+
+    <div class="container">
+        <div class="footer-bottom">
+            <p class="micro">&copy; <span data-year>2026</span> Bismark Obuobi</p>
+            <p class="micro">Designed &amp; built by hand</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="blog.js"></script>
 </body>
 </html>
