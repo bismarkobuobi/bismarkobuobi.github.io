@@ -1,225 +1,176 @@
-# Bismark Obuobi - Portfolio Website
+# Bismark Obuobi — Portfolio
 
-A vintage-style, animated portfolio website with a retro terminal/CRT screen aesthetic.
+Personal site for Bismark Obuobi, backend developer. Static HTML, CSS and vanilla
+JavaScript. No build step, no dependencies to install.
 
-## 🎨 Features
-
-- **Vintage CRT Screen Effect**: Scanlines and subtle screen flicker for that authentic retro feel
-- **Terminal-Inspired Design**: Command-line interface aesthetics throughout
-- **Smooth Animations**: Typewriter effects, fade-ins, and glitch animations
-- **Fully Responsive**: Works on desktop, tablet, and mobile devices
-- **Interactive Elements**: Hover effects, parallax scrolling, and animated skill bars
-- **Easter Eggs**: Console messages and Konami code surprise
-
-## 📝 Customization Guide
-
-### 1. Personal Photo
-
-- **Location**: `index.html` around line 90
-- Replace the placeholder div with your image:
-
-```html
-<img src="images/profile.jpg" alt="Bismark Obuobi" />
-```
-
-- Create an `images` folder and add your photo there
-
-### 2. Contact Information
-
-All contact links are in the **Contact Section** (around line 350-380 in `index.html`):
-
-- **Email**: Replace `your.email@example.com` (appears 3 times)
-- **GitHub**: Replace `yourusername` with your GitHub username
-- **LinkedIn**: Replace `yourprofile` with your LinkedIn profile
-- **Twitter/X**: Replace `yourhandle` with your handle (or remove if not needed)
-- **Phone**: Replace `+233xxxxxxxxx` with your actual phone number
-
-### 3. Social Media Links
-
-Look for `<!-- TODO:` comments in the contact section and update:
-
-- GitHub URL
-- LinkedIn URL
-- Twitter/X URL
-- Any other social media you want to add
-
-### 4. Projects
-
-You can add more projects by copying the `project-card` div structure (around line 280-340)
-
-### 5. Skills
-
-Adjust skill percentages in the `styles.css` file or directly in HTML:
-
-- Look for `data-progress` attributes
-- Change the percentage values to match your proficiency
-
-## 🚀 Getting Started
-
-1. Open `index.html` in your browser to view the website
-2. Search for `<!-- TODO:` comments in the HTML to find areas requiring customization
-3. Replace placeholder content with your actual information
-4. Add your profile photo to an `images` folder
-
-## 🌐 How to Host Your Portfolio
-
-### Option 1: GitHub Pages (FREE & Recommended)
-
-**Steps:**
-
-1. Create a GitHub account (if you don't have one)
-2. Create a new repository named `your-username.github.io`
-3. Upload all your portfolio files (index.html, styles.css, script.js, images folder)
-4. Go to repository Settings → Pages
-5. Under "Source", select "main" branch
-6. Your site will be live at `https://your-username.github.io`
-
-**Using Git:**
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/your-username/your-username.github.io.git
-git push -u origin main
-```
-
-### Option 2: Netlify (FREE)
-
-**Steps:**
-
-1. Go to [netlify.com](https://netlify.com) and sign up
-2. Click "Add new site" → "Deploy manually"
-3. Drag and drop your Portfolio folder
-4. Your site will be live instantly with a free subdomain
-5. Optional: Connect a custom domain
-
-**Using Netlify CLI:**
-
-```bash
-npm install -g netlify-cli
-cd Portfolio
-netlify deploy --prod
-```
-
-### Option 3: Vercel (FREE)
-
-**Steps:**
-
-1. Go to [vercel.com](https://vercel.com) and sign up
-2. Click "New Project"
-3. Import your GitHub repository (or drag and drop files)
-4. Click "Deploy"
-5. Your site will be live in seconds
-
-### Option 4: Render (FREE)
-
-**Steps:**
-
-1. Go to [render.com](https://render.com) and sign up
-2. Click "New" → "Static Site"
-3. Connect your GitHub repository
-4. Set build command to empty and publish directory to `.`
-5. Click "Create Static Site"
-
-### Option 5: Traditional Web Hosting
-
-If you have a hosting service (like cPanel hosting):
-
-1. Use FTP/SFTP client (like FileZilla)
-2. Upload all files to the `public_html` or `www` directory
-3. Access via your domain name
-
-### Custom Domain Setup
-
-After hosting on any free platform, you can add a custom domain:
-
-1. Buy a domain from Namecheap, GoDaddy, or Google Domains
-2. In your hosting dashboard, add the custom domain
-3. Update DNS records in your domain registrar:
-   - Add A record or CNAME record as instructed by your host
-4. Wait 24-48 hours for DNS propagation
-
-### 🎯 My Recommendation for You
-
-Since you're a student and want to showcase your work professionally:
-
-1. **Use GitHub Pages** - It's free, reliable, and shows you know Git
-2. **Custom Domain** - Buy `bismarkobuobi.com` or `bismarkdev.com` (~$10-15/year)
-3. **Professional Email** - Set up email@yourdomain.com
-
-This combination is what most developers use and it's completely free (except the domain)!
-
-## 🎯 File Structure
-
-```
-Portfolio/
-│
-├── index.html          # Main HTML file
-├── styles.css          # All styling and animations
-├── script.js           # Interactive functionality
-├── README.md           # This file
-└── images/            # Create this folder for your images
-    └── profile.jpg    # Your profile photo
-```
-
-## 🎨 Color Customization
-
-To change the color scheme, edit the CSS variables in `styles.css` (around line 10):
-
-```css
-:root {
-  --primary-color: #00ff00; /* Main accent color */
-  --secondary-color: #00cc00; /* Secondary accent */
-  --bg-color: #0a0a0a; /* Background */
-  --card-bg: #1a1a1a; /* Card backgrounds */
-  --text-color: #00ff00; /* Text color */
-  --border-color: #00ff00; /* Border color */
-}
-```
-
-## 📱 Responsive Design
-
-The website is fully responsive and adapts to:
-
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (< 768px)
-
-## 🎭 Animations Included
-
-- Typewriter effect
-- Glitch effect on titles
-- Fade-in animations
-- Skill bar progress animations
-- Hover effects
-- Parallax scrolling
-- CRT screen effects (scanlines & flicker)
-
-## 🔧 Technologies Used
-
-- HTML5
-- CSS3 (with animations and custom properties)
-- Vanilla JavaScript (no frameworks)
-
-## 📌 Notes
-
-- No external dependencies required
-- Works offline
-- Fast loading times
-- Cross-browser compatible
-- SEO-friendly structure
-
-## 🎮 Easter Eggs
-
-- Check the browser console for ASCII art
-- Try the Konami Code: ↑ ↑ ↓ ↓ ← → ← → B A
-
-## 📄 License
-
-Feel free to use this template for your own portfolio. Good luck with your journey to becoming a world-class software engineer! 🚀
+Live at **[www.bismarkobuobi.live](https://www.bismarkobuobi.live)**.
 
 ---
 
-**Built with passion by Bismark Obuobi** | Backend Developer | System Design Enthusiast
+## The design
+
+A "gallery paper" system: warm off-white by default, with a dark **ink** mode the
+visitor can toggle (the choice is remembered in `localStorage`).
+
+Four visual languages, each with a defined job so they argue on the page without
+shouting over each other:
+
+| Language              | Where it shows up                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| **Luxury editorial**  | Instrument Serif display type, Newsreader prose, wide measures, hairline rules         |
+| **Conceptual sketch** | The About system diagram, project plates, crosshatch shading, Caveat margin notes      |
+| **Pixel**             | Skill meters, corner joints, tick bullets, the wordmark, Silkscreen micro-labels       |
+| **Graffiti**          | One spray colour, the marker sweep under the hero name, section and project numerals   |
+
+### Type
+
+| Role              | Family            |
+| ----------------- | ----------------- |
+| Display           | Instrument Serif  |
+| Prose             | Newsreader        |
+| UI, labels, tags  | JetBrains Mono    |
+| Margin notes      | Caveat            |
+| Pixel micro-type  | Silkscreen        |
+| Graffiti numerals | Permanent Marker  |
+
+All loaded from Google Fonts in a single request per page.
+
+### Colour
+
+Every colour is a CSS custom property at the top of `styles.css`. Paper values sit
+on `:root`; ink values override them under `[data-theme="ink"]`. Change them in one
+place and the whole site follows.
+
+```css
+--paper       /* page surface      */
+--ink         /* primary text      */
+--spray       /* graffiti accent   */
+--spray-ink   /* same, text-safe   */
+--blueprint   /* draft-pen accent  */
+```
+
+`--spray` is used for large decorative fills; `--spray-ink` is the darker variant
+that passes contrast when used on text.
+
+### Motion
+
+Motion follows [Emil Kowalski's design engineering
+principles](https://github.com/emilkowalski/skills):
+
+- `transform` and `opacity` only, so animation stays off the layout and paint path.
+- Strong custom curves (`--ease-out: cubic-bezier(0.23, 1, 0.32, 1)`), never `ease-in`.
+- UI interactions stay under 300ms; only the hero and scroll reveals run longer,
+  because those are marketing surfaces seen once per visit.
+- Every pressable element scales to `0.97` on `:active`.
+- Hover motion is gated behind `@media (hover: hover) and (pointer: fine)` so touch
+  taps don't trigger false hovers.
+- `prefers-reduced-motion` keeps colour and opacity, drops movement.
+- Scroll reveals only arm when JavaScript is present, so a no-JS visitor sees the
+  full page rather than a blank one.
+
+---
+
+## File structure
+
+```
+Portfolio/
+├── index.html          Home
+├── about.html          Bio + the request-path diagram
+├── skills.html         Pixel proficiency meters
+├── projects.html       Project entries with sketch plates
+├── blog.html           Writing index
+├── post.html           Single post renderer
+├── contact.html        Contact channels
+│
+├── styles.css          The entire design system
+├── script.js           Shared behaviour (theme, nav, reveals, copy button)
+├── blog.js             Blog engine (index, single post, home "recent")
+│
+├── posts.json          Post manifest — the source of truth for the blog
+├── blog/posts/*.md     Post bodies in Markdown
+│
+├── docs/               Résumé PDF
+├── icons/              favicon.svg (pixel mark) + favicon.png fallback
+└── CNAME               Custom domain for GitHub Pages
+```
+
+---
+
+## Running it locally
+
+The blog fetches `posts.json` and Markdown over HTTP, so opening `index.html`
+straight from disk will show an error in the Writing sections. Serve the folder
+instead:
+
+```bash
+python -m http.server 8000
+# then open http://localhost:8000
+```
+
+Any static server works — `npx serve`, VS Code Live Server, whatever you have.
+
+---
+
+## Adding a blog post
+
+1. Write `blog/posts/your-slug.md` in plain Markdown.
+2. Add an entry to `posts.json`:
+
+```json
+{
+  "slug": "your-slug",
+  "title": "Your Title",
+  "date": "2026-08-28",
+  "excerpt": "One or two sentences that show up on the index.",
+  "tags": ["Backend", "System Design"]
+}
+```
+
+The slug must match the filename, dates are `YYYY-MM-DD`, and the list sorts newest
+first automatically. The home page picks up the three most recent posts on its own.
+Reading time is calculated from the Markdown — you don't set it.
+
+---
+
+## Where the content lives
+
+Everything is plain HTML, so edit it directly:
+
+| What                     | Where                                                           |
+| ------------------------ | --------------------------------------------------------------- |
+| Hero name, lede, facts   | `index.html`, the `.hero` section                                |
+| Bio and the route list   | `about.html`                                                     |
+| The system diagram       | `about.html`, the inline `<svg>` inside `.diagram`               |
+| Skill names and numbers  | `skills.html` — set `--fill` as a decimal (`--fill:.85` for 85)  |
+| Projects                 | `projects.html`, duplicated in short form on `index.html`        |
+| Contact channels         | `contact.html`                                                   |
+| Nav and footer           | Repeated in every page — change all seven when you edit them     |
+
+The header, mobile menu and footer are intentionally duplicated across pages rather
+than injected by JavaScript, so the site works without JS and search engines see the
+real markup.
+
+---
+
+## Deploying
+
+The repo is set up for GitHub Pages with a custom domain:
+
+1. Push to the default branch.
+2. Settings → Pages → Source: the branch, root folder.
+3. `CNAME` already points at `www.bismarkobuobi.live`; keep the DNS record in the
+   registrar pointed at GitHub Pages.
+
+There is no build step, so what is in the repo is what ships.
+
+---
+
+## Accessibility notes
+
+- Skip link, visible focus rings, `aria-current` on the active nav item.
+- The mobile menu traps interaction with `inert`, closes on Escape, and returns
+  focus to the button.
+- Decorative SVG is `aria-hidden`; the About diagram carries a real `<title>` and
+  `<desc>`.
+- The copy-to-clipboard button announces success through a live region.
+- Colour pairs were checked against WCAG AA in both themes.
