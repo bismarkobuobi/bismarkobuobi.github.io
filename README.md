@@ -1,6 +1,6 @@
 # Bismark Obuobi — Portfolio
 
-Personal site for Bismark Obuobi, backend developer. Static HTML, CSS and vanilla
+Personal site for Bismark Obuobi,  software engineer. Static HTML, CSS and vanilla
 JavaScript. No build step, no dependencies to install.
 
 Live at **[www.bismarkobuobi.live](https://www.bismarkobuobi.live)**.
@@ -122,7 +122,7 @@ Any static server works — `npx serve`, VS Code Live Server, whatever you have.
   "title": "Your Title",
   "date": "2026-08-28",
   "excerpt": "One or two sentences that show up on the index.",
-  "tags": ["Backend", "System Design"]
+  "tags": ["Software", "System Design"]
 }
 ```
 
