@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="paper">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Note — Bismark Obuobi</title>
+<meta name="description" content="A short note by Bismark Obuobi on a project he is building.">
+<meta name="author" content="Bismark Obuobi">
+<meta name="theme-color" content="#f4f1e9">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+    (function () {
+        try {
+            var stored = localStorage.getItem('theme');
+            if (stored === 'ink' || stored === 'paper') document.documentElement.setAttribute('data-theme', stored);
+        } catch (e) {}
+    })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="wordmark" href="index.html">Bismark Obuobi</a>
+        <div class="header-nav">
+            <nav aria-label="Primary" data-nav>
+                <ul class="nav-list">
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 1.9v2.5M12 19.6v2.5M22.1 12h-2.5M4.4 12H1.9M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8M19.1 19.1l-1.8-1.8M6.7 6.7 4.9 4.9"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.6A8.8 8.8 0 0 1 9.4 3.5a8.8 8.8 0 1 0 11.1 11.1Z"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+    <article class="container">
+        <header class="note-header">
+            <a class="back-link" href="notes.html">&larr; All notes</a>
+            <h1 id="note-title">Loading…</h1>
+            <p class="micro" id="note-meta"></p>
+            <div class="tag-row" id="note-tags"></div>
+        </header>
+
+        <div class="prose" id="note-content">
+            <p class="empty-state">Loading note…</p>
+        </div>
+    </article>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="micro">&copy; <span data-year>2026</span> Bismark Obuobi</p>
+        <p class="micro">Accra, Ghana</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="script.js"></script>
+<script src="notes.js"></script>
+</body>
+</html>
