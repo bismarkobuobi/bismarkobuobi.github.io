@@ -3,7 +3,7 @@
 Personal site for Bismark Obuobi,  software engineer. Static HTML, CSS and vanilla
 JavaScript. No build step, no dependencies to install.
 
-Live at **[www.bismarkobuobi.live](https://www.bismarkobuobi.live)**.
+Live at **[bismarkobuobi.github.io](https://bismarkobuobi.github.io)**.
 
 ---
 
@@ -154,12 +154,12 @@ real markup.
 
 ## Deploying
 
-The repo is set up for GitHub Pages with a custom domain:
+The repo is served by GitHub Pages at `bismarkobuobi.github.io`:
 
 1. Push to the default branch.
 2. Settings → Pages → Source: the branch, root folder.
-3. `CNAME` already points at `www.bismarkobuobi.live`; keep the DNS record in the
-   registrar pointed at GitHub Pages.
+3. Leave the custom domain field empty. To use a custom domain again, add a `CNAME`
+   file with the domain and point its DNS record at GitHub Pages.
 
 There is no build step, so what is in the repo is what ships.
 
